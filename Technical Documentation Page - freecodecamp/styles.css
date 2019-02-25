@@ -1,0 +1,264 @@
+* {
+	margin: 0;
+	padding: 0;
+	line-height: 1.35;
+	font-size: 18px;
+	font-family: Arial, Calibri, sans-serif;
+}
+
+
+body {
+	display: flex;
+	margin: 3em;
+
+}
+
+#main-doc {
+	margin: 0 0 0 23%;
+}
+
+section:hover {
+	box-shadow: 0 1px 3px grey;
+	background-color: rgba(0,0,0, .15)
+}
+
+/*--- Nav Column Styles ---*/
+#nav-bar {
+	background-color: lightgray;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 22%;
+	height: 100%;
+
+}
+
+#nav-bar h1 {
+	font-size: 1.5em;
+}
+
+#nav-bar img {
+	width: 112.797px;
+	height: 140.094px;
+}
+
+
+#nav-bar a {
+	text-decoration: none;
+}
+
+#nav-bar li {
+	padding: .5em;
+	background-color: black;
+	color: white;
+	font-style: bold;
+	border-bottom: 2px lightgray solid;
+	list-style-type: none;
+
+}
+
+#nav-bar a:visited {
+	color: white;
+}
+
+#nav-bar li:hover {
+	background-color: darkgrey;
+}
+
+#nav-bar header {
+	margin: 3em 1.5em 1.5em 1.5em;
+}
+
+/*------ Main Content Styles ----*/
+
+#main-doc header {
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: .25em;
+	border-bottom: 1.5px black solid;
+
+} 
+
+.main-section {
+	padding: 1em;
+}
+
+.center {
+	text-align: center;
+}
+
+.center code {
+	padding: .5em;
+	border-radius: 3px;
+	font-size: 1.25em;
+}
+
+.margin-bottom {
+	margin-bottom: 1em;
+}
+
+.center {
+	text-align: center;
+}
+
+#anatomy_of_an_html_element img {
+	width: 60%;
+	height: auto;
+	border: 3px black solid;
+	border-radius: 3px;
+	margin-bottom: .5em;
+}
+
+#anatomy_of_an_html_element ol, #anatomy_of_an_html_document ul,
+#marking_up_text ol {
+	margin-left: 2em;
+}
+
+#anatomy_of_an_html_element li, #anatomy_of_an_html_document li,
+#marking_up_text li {
+	margin-bottom: .5em;
+}
+
+#html-doc {
+	background-color: black;
+	color: lightgreen;
+	width: 70%;
+	height: auto;
+	margin: 0 auto .5em auto;
+	padding: 1em;
+	border-radius: 3px;
+}
+
+#list-doc {
+	background-color: black;
+	color: lightgreen;
+	width: 60%;
+	height: auto;
+	margin: 0 auto .5em auto;
+	padding: 1em;
+	border-radius: 3px;
+}
+
+#heading-doc {
+	background-color: black;
+	color: lightgreen;
+	width: 80%;
+	height: auto;
+	margin: 0 auto .5em auto;
+	padding: 1em;
+	border-radius: 3px;
+}
+
+#marking_up_text h2 {
+	font-size: 1.15em;
+	text-align: center;
+}
+
+.h1-size {
+	font-size: 1.5em;
+}
+
+.h2-size {
+	font-size: 1.35em;
+}
+
+.h3-size {
+	font-size: 1.2em;
+}
+
+.h4-size {
+	font-size: 1.075em;
+}
+
+#credits img {
+	width: 163.891px;
+	height: 126.641px;
+}
+
+
+section {
+	margin-bottom: 3em;
+	background-color: lightgray;
+}
+
+code {
+	color: green;
+	padding: .1em;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+/*------ Media Queries ------*/
+
+@media (max-width: 1000px) {
+	
+	body {
+		flex-direction: column;
+	}
+
+	#nav-bar {
+		position: relative;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+		padding: 0;
+		text-align: center;
+	}
+	
+	header {
+		width: 200px;
+		height: auto;
+		margin: 2em auto 0 auto;
+	}
+
+
+	.flex {
+		display: flex;
+	}
+
+	body {
+		margin: 0;
+	}
+
+	#main-doc {
+		margin: 2em 7.5% 2em 7.5%;
+	}
+
+	#nav-bar header {
+		margin: 2.5em auto 2em auto;
+		width: 100%;
+	}
+
+	.main-section header {
+		margin: 0 auto 0 auto;
+		width: 100%;
+
+	}
+
+	#main-doc header {
+		font-size: 1.4em;
+	}
+}
+
+@media (max-width: 600px) {
+	.main-section {
+		margin: 1em -1em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+
+<body>
+  <div>
+  	<nav id="nav-bar" class="flex">
+  		<div>
+  			<header>
+	  			<div class="center">
+	  				<img src="images/html-logo-edit.png">
+	  				<h1>Documentation</h1>
+	  			</div>
+  			</header>
+  		</div>
+  		<div>
+	  		<ul>
+	  			<a href="#introduction" class="nav-link"><li>Introduction</li></a>
+	  			<a href="#what_is_html?" class="nav-link"><li>What is HTML?</li></a>
+	  			<a href="#anatomy_of_an_html_element" class="nav-link"><li>Anatomy of an HTML Element</li></a>
+	  			<a href="#anatomy_of_an_html_document" class="nav-link"><li>Anatomy of an HTML Document</li></a>
+	  			<a href="#marking_up_text" class="nav-link"><li>Marking Up Text</li></a>
+	  			<a href="#learn_more_about_html" class="nav-link"><li>Learn More About HTML</li></a>
+	  		</ul>
+	  	</div>
+  	</nav>
+  </div>
+
+ <div>
+  <main id="main-doc">
+
+  	<section class="main-section" id="introduction">
+  		<header>Introduction</header>
+  		<p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).</p>
+  		<p>"HyperText" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.</p>
+  		<p>HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup includes special "elements" such as <code>&lt;head&gt;</code>, <code>&lt;title&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;audio&gt;</code>, <code>&lt;canvas&gt;</code>, <code>&lt;datalist&gt;</code>, <code>&lt;details&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;video&gt;</code> and many others.
+  		</p>
+  		<p>An HTML element is set off from other text in a document by "tags", which consist of the element name surrounded by "<" and ">".  The name of an element inside a tag is case insensitive. That is, it can be written in uppercase, lowercase, or a mixture.</p>
+  	</section>
+
+  	<section class="main-section" id="what_is_html?">
+  		<header>What is HTML?</header>
+  		<p>HTML is not a programming language; it is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on.  For example, take the following line of content:</p>
+  		<div class="center margin-bottom">
+  			<code>My cat is very grumpy</code>
+  		</div>
+  		<p>If we wanted the line to stand by itself, we could specify that it is a paragraph by enclosing it in paragraph tags:</p>
+  		<div class="center">
+  			<code>&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code>
+  		</div>
+  	</section>
+
+  	<section class="main-section" id="anatomy_of_an_html_element">
+  		<header>Anatomy of an HTML Element</header>
+  		<p>Let's explore this paragraph element a bit further.</p>
+  		<div class="center">
+  			<img src="images/grumpy-cat.png">
+  		</div>
+  		<p>The main parts of our element are as follows:</p>
+  		<ol>
+  			<li>The opening tag: This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins or starts to take effect — in this case where the paragraph begins.</li>
+  			<li>The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the paragraph ends. Failing to add a closing tag is one of the standard beginner errors and can lead to strange results.</li>
+  			<li>The content: This is the content of the element, which in this case is just text.</li>
+  			<li>The element: The opening tag, the closing tag, and the content together comprise the element.</li>
+  		</ol>
+  		
+  	</section>
+
+  	<section class="main-section" id="anatomy_of_an_html_document">
+  		<header>Anatomy of an HTML Document</header>
+  		<p>Now we'll look at how individual elements are combined to form an entire HTML page.</p>
+  		<div id="html-doc">
+  			<code>
+	  			&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&nbsp;&nbsp;&lt;head&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+			    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My test page&lt;title&gt;<br>
+			  	&nbsp;&nbsp;&lt;/head&gt;<br>
+			 	&nbsp;&nbsp;&lt;body&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="images/firefox-icon.png" alt="My test image"&gt;<br>
+				&nbsp;&nbsp;&lt;/body><br>
+				&lt;/html&gt;<br>
+  			</code>
+  		</div>
+  		<p>Here, we have the following:</p>
+  		<ul>
+  			<li><code>&lt;!DOCTYPE html&gt;</code> — The doctype. In the mists of time, when HTML was young (around 1991/92), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. However, these days no one cares about them, and they are just a historical artifact that needs to be included for everything to work right. For now, that's all you need to know.</li>
+  			<li><code>&lt;html&gt; &lt;/html&gt;</code> — the <code>&lt;html&gt;</code> element. This element wraps all the content on the entire page and is sometimes known as the root element.</li>
+  			<li><code>&lt;head&gt; &lt;/head&gt;</code> — the <code>&lt;head&gt;</code> element. This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more.</li>
+  			<li><code>&lt;meta charset="utf-8"&gt;</code> — This element sets the character set your document should use to UTF-8, which includes most characters from the vast majority of written languages. Essentially, it can now handle any textual content you might put on it. There is no reason not to set this, and it can help avoid some problems later on.</li>
+  			<li><code>&lt;title&gt; &lt;/title&gt;</code> — the <code>&lt;title&gt;</code> element. This sets the title of your page, which is the title that appears in the browser tab the page is loaded in. It is also used to describe the page when you bookmark/favourite it.</li>
+  			<li><code>&lt;body&gt; &lt;/body&gt;</code> — the <code>&lt;body&gt;</code>element. This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else.
+</li>
+  		</ul>
+  	</section>
+
+  	<section class="main-section" id="marking_up_text">
+  		<header>Marking Up Text</header>
+  		<p>This section will cover some of the essential HTML elements you'll use for marking up the text.</p>
+  		<div class="margin-bottom">
+	  		<h2>Headings</h2>
+	  		<p>Heading elements allow you to specify that certain parts of your content are headings — or subheadings. In the same way that a book has the main title, chapter titles, and subtitles, an HTML document can too. HTML contains 6 heading levels, <code>&lt;h1&gt; – &lt;h6&gt;</code>, although you'll commonly only use 3 to 4 at most:</p>
+	  		<div id="heading-doc">
+		  		<code>
+		  			<span class="h1-size">&lt;h1&gt;My main title&lt;/h1&gt;</span><br>
+					<span class="h2-size">&lt;h2&gt;My top level heading&lt;/h2&gt;</span><br>
+					<span class="h3-size">&lt;h3&gt;My subheading&lt;/h3&gt;</span><br>
+					<span class="h4-size">&lt;h4&gt;My sub-subheading&lt;/h4&gt;</span><br>
+		  		</code>
+	  		</div>
+	  	</div>
+
+	  	<div class="margin-bottom">
+	  		<h2>Paragraphs</h2>
+	  		<p>As explained above, <code>&lt;p&gt;</code> elements are for containing paragraphs of text; you'll use these frequently when marking up regular text content:</p>
+	  		<div class="center">
+	  			<code>&lt;p&gt;This is a single paragraph&lt;/p&gt;</code>
+	  		</div>
+	  	</div>
+	  	<div class="margin-bottom">
+	  		<h2>Lists</h2>
+	  		<p>A lot of the web's content is lists, and HTML has special elements for these. Marking up lists always consist of at least 2 elements. The most common list types are ordered and unordered lists:</p>
+	  		<ol>
+	  			<li>Unordered lists are for lists where the order of the items doesn't matter, such as a shopping list. These are wrapped in a <code>&lt;ul&gt;</code> element.</li>
+	  			<li>Ordered lists are for lists where the order of the items does matter, such as a recipe. These are wrapped in an <code>&lt;ol&gt;</code> element.</li>
+	  		</ol>
+	  		<p>Each item inside the lists is put inside an <code>&lt;li&gt;</code> (list item) element.</p>
+	  		<div id="list-doc">
+		  		<code>
+		  			&lt;p&gt;List of my favorite fruits&lt;p&gt;<br>
+		  			&lt;ul&gt;<br>
+		  			&nbsp;&nbsp;&lt;li&gt;Apples&lt;/li&gt;<br>
+		  			&nbsp;&nbsp;&lt;li&gt;Grapes&lt;/li&gt;<br>
+		  			&nbsp;&nbsp;&lt;li&gt;Oranges&lt;/li&gt;<br>
+					&lt;/ul&gt;
+				</code>
+			</div>
+		</div>
+
+  	</section>
+
+  	<section class="main-section" id="learn_more_about_html">
+  		<header>Learn More About HTML</header>
+  		<p>This HTML Documentation was gathered from the Mozilla Developer Network (MDN). If you'd like to learn more click the link below.</p>
+  		<div class="center">
+  			<p><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">Learn more</a></p>
+  		<div>
+  	</section>
+
+  	<section class="main-section" id="credits">
+  		<p class="center">Created by Tyler Fann using:</p>
+  		<div class="center">
+  			<img src="images/html-css-logos.svg">
+  		</div>
+ 	 </section>
+
+  </main>
+
+
+ </div>
+
+</body>
+
+</html>
