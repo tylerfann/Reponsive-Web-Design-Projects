@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Developer Survey</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+
+<div class="background-image">
+  <div class="background-overlay">
+    <div>
+      <h1 class="container" id="title">Aspiring Self-Taught Software Developer Survey</h1>
+
+      <p class="container" id="description">These questions are geared towards individuals who don't have a formal education in computer science or software development. The goal of this survey is to gather data on the resources that self-taught software developers are using and what they recommend most.</p>
+    </div>
+
+    <form id="survey-form" method="GET" action="/url-where-you-want-to-submit-form-data">
+      
+      <div class="container basic-info">
+        <div>
+          <label id="name-label" for="name">Name:</label>
+            <input type="text" placeholder="Enter your name" id="name" required>
+        </div>
+        <div>
+          <label id="email-label" for="email">E-mail:</label>
+            <input type="email" placeholder="Enter your email address" id="email" required>
+        </div>
+        <div>
+          <label id="number-label" for="number">Age:</label>
+            <input type="number" placeholder="Age" id="number" min="1" max="125" required>
+        </div>
+        <div>
+          <label for="education">Level of Education:</label>
+          <select id="dropdown" name="education" required>
+            <option disabled value>Select an option</option>
+            <option value="less-than-hs">Less than High School Diploma</option> 
+            <option value="hs">High School Diploma/GED</option>
+            <option value="some-college">Some College</option>
+            <option value="associates">Associates Degree</option>
+            <option value="bacholers">Bacholers Degree</option>
+            <option value="masters">Masters Degree</option>
+            <option value="ph.d">Ph.D</option>
+          </select>
+        </div>
+    </div>
+
+      <div class="container">
+        <label for="subject-matter">What type of software development are you focusing on?</label>
+          <ul name="subject-matter">
+            <li><label>Full Stack Development</label><input name="radio-buttons" value="1" type="radio"></li>
+            <li><label>Front-End Development</label><input name="radio-buttons" value="2" type="radio"></li>
+            <li><label>Back-End Development</label><input name="radio-buttons" value="3" type="radio"></li>
+            <li><label>Game Development</label><input name="radio-buttons" value="4" type="radio"></li>
+            <li><label>Data Analytics</label><input name="radio-buttons" value="5" type="radio"></li>
+            <li><label>Mobile Development</label><input name="radio-buttons" value="6" type="radio"></li>
+            <li><label>UI/UX Design or Research</label><input name="radio-buttons" value="7" type="radio"></li>
+            <li><label>Machine Learning/AI</label><input name="radio-buttons" value="8" type="radio"></li>
+          </ul>
+      </div>
+
+      <div class="container">
+        <label for="study-length">How long have you been studying?</label>  
+        <select id="dropdown" name="study-length">
+          <option disabled value>Select an option</option>
+          <option value="less-six-months">Less than 6 months</option> 
+          <option value="six-to-year">6 months to 1 year</option>
+          <option value="year-to-two">1 to 2 years</option>
+          <option value="two-plus">Over 2 years</option>
+        </select>
+      </div>
+      
+      <div class="container">
+        <label class="center" for="skills">What skills have you learned and how would you rate them?</label> 
+        <ul name="skills">
+          <li><label>HTML/CSS</label></li><input name="checkboxes" value="1" type="checkbox"><select id="dropdown" name="skill-level">
+        <option disabled value>Select an option</option>
+        <option value="beginner">Beginner</option> 
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+          <li><label>JavaScript</label></li><input name="checkboxes" value="2" type="checkbox"><select id="dropdown" name="skill-level">
+        <option disabled value>Select an option</option>
+        <option value="beginner">Beginner</option> 
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+          <li><label>Python</label></li><input name="checkboxes" value="3" type="checkbox"><select id="dropdown" name="skill-level">
+        <option disabled value>Select an option</option>
+        <option value="beginner">Beginner</option> 
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+         <li><label>C#</label></li><input name="checkboxes" value="4" type="checkbox"><select id="dropdown" name="skill-level">
+        <option disabled value>Select an option</option>
+        <option value="beginner">Beginner</option> 
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+        <li><label>Photoshop/Illustrator</label></li><input name="checkboxes" value="5" type="checkbox"><select id="dropdown" name="skill-level">
+        <option disabled value>Select an option</option>
+        <option value="beginner">Beginner</option> 
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+         <li><label>iOS/Android</label></li><input name="checkboxes" value="6" type="checkbox"><select id="dropdown" name="skill-level">
+        <option disabled value>Select an option</option>
+        <option value="beginner">Beginner</option> 
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+       </select>
+         <li><label>Java</label></li><input name="checkboxes" value="7" type="checkbox"><select id="dropdown" name="skill-level">
+        <option disabled value>Select an option</option>
+        <option value="beginner">Beginner</option> 
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+      </ul>
+      </div>
+       
+      <div class="container">
+        <label class="center" for="resources">What resources have you used and recommend?</label> 
+        <ul name="resources">
+          <li><label>freecodecamp</label></li><input name="checkboxes" value="1" type="checkbox"><select id="dropdown" name="resource">
+        <option disabled value>Select an option</option>
+        <option value="beginner">Don't Recommend</option> 
+        <option value="intermediate">Recommend</option>
+        <option value="advanced">Highly Recommend</option>
+      </select>
+        <li><label>Team Treehouse</label></li><input name="checkboxes" value="2" type="checkbox"><select id="dropdown" name="resource">
+        <option disabled value>Select an option</option>
+        <option value="beginner">Don't Recommend</option> 
+        <option value="intermediate">Recommend</option>
+        <option value="advanced">Highly Recommend</option>
+      </select>
+        <li><label>CodeAcademy</label></li><input name="checkboxes" value="3" type="checkbox"><select id="dropdown" name="resource">
+        <option disabled value>Select an option</option>
+        <option value="beginner">Don't Recommend</option> 
+        <option value="intermediate">Recommend</option>
+        <option value="advanced">Highly Recommend</option>
+      </select>
+        <li><label>Udemy</label></li><input name="checkboxes" value="4" type="checkbox"><select id="dropdown" name="resource">
+        <option disabled value>Select an option</option>
+        <option value="beginner">Don't Recommend</option> 
+        <option value="intermediate">Recommend</option>
+        <option value="advanced">Highly Recommend</option>
+      </select>
+         <li><label>YouTube</label></li><input name="checkboxes" value="5" type="checkbox"><select id="dropdown" name="resource">
+        <option disabled value>Select an option</option>
+        <option value="beginner">Don't Recommend</option> 
+        <option value="intermediate">Recommend</option>
+        <option value="advanced">Highly Recommend</option>
+      </select>
+         <li><label>Various Books</label></li><input name="checkboxes" value="6" type="checkbox"><select id="dropdown" name="resource">
+        <option disabled value>Select an option</option>
+        <option value="beginner">Don't Recommend</option> 
+        <option value="intermediate">Recommend</option>
+        <option value="advanced">Highly Recommend</option>
+      </select>
+      </ul>
+      </div>
+      
+        <div class="container">
+          <label class="center" for="advice">Additional comments and advice for aspiring self-taught developers:</label>
+            <div class="text-area">
+            <textarea id="advice" name="advice" placeholder="Give some advice"></textarea>
+        </div>
+      </div>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+    <div class="empty-space"></div>
+  </div>
+</div>
+  
+
+  </main>
+</body>
+
+</html>
