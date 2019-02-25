@@ -2,7 +2,7 @@ Live links:
 
 Mac Miller - http://www.macmillertribute.com.s3-website.us-east-2.amazonaws.com/
 
-Rhody buckets - http://www.rhodybuckets.com.s3-website.us-east-2.amazonaws.com/ 
+Product Landing Page - http://www.rhodybuckets.com.s3-website.us-east-2.amazonaws.com/ 
 
 Survey form - http://www.aspiringsoftwaredevelopersurvey.com.s3-website.us-east-2.amazonaws.com/ 
 
