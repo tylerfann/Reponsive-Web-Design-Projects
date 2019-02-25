@@ -1,0 +1,163 @@
+/*************************
+Styles
+*************************/
+
+* {
+	color: white;
+	font-family: Insolente, Helvetica, Verdana;
+	text-align: center;
+}
+
+main {
+	background-color: #67578e;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+#title, footer {
+	background-color: #e81748;
+	text-shadow: 0 .05em .1em grey;
+}
+
+#title, img, p, figcaption, footer {
+	box-shadow: 0 1px 1px #39304f;
+}
+
+img {
+  border-radius: .2em;
+  border: .5em #8071a8 solid;
+  box-shadow: 0 1px 1px #39304f;
+  max-width: 430px;
+  height: auto;
+  }
+
+h1 {
+  display: inline-block;
+  font-size: 3em;
+  border: 3px white solid;
+  padding: .2em;
+  border-radius: .05em;
+  letter-spacing: .01em;
+  margin: .2em 0 .5em 0;
+  }
+
+h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  font-style: italic;
+  padding-top: .8em;
+  letter-spacing: .05em;
+  }
+
+#tribute-info, img {
+	width: 75%;
+	margin: auto;
+}
+
+p {
+  border-radius: .2em;
+  margin-top: 1em;
+  padding: .8em;
+  line-height: 1.5em;
+  box-shadow: 0 1px 1px #39304f;
+  text-align: justify;
+  }
+
+p, figcaption {
+	background-color:  #8071a8;
+
+}
+
+h1 {
+	box-shadow: 0 1px 1px grey;
+}
+
+
+#img-caption {
+  border-radius: .2em;
+  padding: .4em;
+  max-width: 500px;
+  margin: .2em auto 0 auto;
+}
+
+footer {
+	text-shadow: none;
+	padding-top: .7em;
+	padding-bottom: 1em;
+
+}
+
+#tribute-link {
+	font-style: italic;
+	font-weight: lighter;
+	font-size: 1.2em;
+}
+
+.last {
+	margin-bottom: 1em;
+}
+
+h6 {
+	padding: .5em;
+
+}
+
+a:hover {
+  color: #67578e;
+}
+
+a:visited {
+	color: white;
+}
+
+#title {
+	margin-bottom: 1em;
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+/*************************
+Media Queries
+*************************/
+
+@media (min-width: 1000px) {
+	.container {
+		flex-direction: row;
+		margin-bottom: 3em;
+		max-width: 1000px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 3em;
+	}
+
+	#img-div {
+		flex-basis: 50%;
+	}
+
+	.width {
+		flex-basis: 50%;
+	}
+
+	#title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1em;
+	}
+
+	#title h2 {
+		margin-right: .5em;
+		margin-bottom: .5em;
+	}
+}
+
+
+
