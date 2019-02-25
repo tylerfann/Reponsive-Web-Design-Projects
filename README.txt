@@ -1,2 +1,9 @@
-Live link:
+Live links:
+
 Mac Miller - http://www.macmillertribute.com.s3-website.us-east-2.amazonaws.com/
+
+Rhody buckets - http://www.rhodybuckets.com.s3-website.us-east-2.amazonaws.com/ 
+
+Survey form - http://www.aspiringsoftwaredevelopersurvey.com.s3-website.us-east-2.amazonaws.com/ 
+
+HTML documentation - http://www.html-documentation.com.s3-website.us-east-2.amazonaws.com/
