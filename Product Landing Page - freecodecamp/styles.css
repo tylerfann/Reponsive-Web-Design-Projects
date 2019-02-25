@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+
+header, footer {
+	background-color: #d9d9d9;
+}
+
+
+
+header li, footer li {
+	list-style-type: none;
+	margin-right: 1em;
+	margin-top: 3em;
+}
+
+header img, header ul, header li, header nav {
+	display: inline;
+}
+
+#header-img {
+	margin: 0 20% 0 25%;
+}
+
+
+
+
+
+
+.left-container, .right-container {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+.main-container {
+	display: flex;
+	background-color: #0a2658;
+}
+
+.container-styles {
+	background-color: #6ac4f2;
+	color: white;
+	margin-top: 2em;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	border-radius: 2px;
+	padding: 1em;
+	text-align: center;
+
+}
+
+
+section:last-child {
+	margin-bottom: 2em;
+}
+
+#store-area img {
+	width: 50%;
+}
+
+#store-area {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#store-area div {
+	justify-content: space-between;
+	flex-basis: 30%;
+	padding-left: -1em;
+	padding-right: -1em;
+}
+
+form select, form button, input[type='submit'] {
+	display: block;
+	text-align: center;
+	margin-bottom: .5em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#store-area div p {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+form select, form button, p, label[for='size'] {
+	font-size: .8em;
+}
+
+input[type='submit'], button {
+	border-radius: .5em;
+	padding: .2em;
+	background-color: darkblue;
+	color: white;
+}
+
+li a {
+	text-decoration: none;
+}
+
+footer ul {
+	margin-left: auto;
+	margin-right: auto;
+}

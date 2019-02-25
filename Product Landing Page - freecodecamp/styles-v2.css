@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.flex {
+	display: flex;
+}
+
+.container-top {
+	flex-direction: row-reverse;
+	justify-content: space-around;
+}
+
+.player-container, .inner-box {
+	flex-wrap: wrap;
+}
+
+.player-box {
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+
+.recent-games {
+	flex-direction: column;
+}
+
+#scores-area table, #scores-area img {
+	margin-right: 5em;
+	padding: 1em;
+}
+
+
+#store-area img {
+	width: 225px;
+	height: 250px;
+}
+
+#store-area {
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.ram-zone {
+	margin: 5em 0 5em 0;
+}
+
+#header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#store-area div {
+	margin-top: 1em;
+}
+
+#header-text {
+	width: 288px;
+	height: 72px;
+}
+
+#header-img {
+	width: 108px;
+	height: 108px;
+}
+
+#nav-bar ul {
+	display: flex;
+}
+
+#nav-bar li {
+	margin-right: 1em;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+#nav-bar a {
+	text-decoration: none;
+}
+
+.top-margin {
+	margin-top: 3em;
+}
+
+a:visited {
+	color: blue;
+}
+
+#header a:hover {
+	border-bottom: 3px darkblue solid;
+	padding-bottom: 1em;
+	transition: border-bottom .2s;
+}
+
+#roster-area img {
+	border-radius: 5%;
+}
+
+
+
+
